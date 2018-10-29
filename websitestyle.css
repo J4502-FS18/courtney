@@ -107,3 +107,34 @@ body {
 	background: #DECEEC;
 	border-radius: 3px;
 }
+
+/*	--------------------------------------------------
+Container
+-------------------------------------------------- */
+div#container, div.container { position: relative; width: 430px; margin: 0 auto; padding: 0; }
+
+
+/*	--------------------------------------------------
+Grid
+-------------------------------------------------- */
+.column-row, .row { margin: 0 0 18px -10px; }
+.column, .columns { float: left; display: inline; margin: 0 0 0 10px; }
+
+.one { width: 100px; }
+.two { width: 210px; }
+.three { width: 320px; }
+.four { width: 430px; }
+
+.offset-by-one-half { margin-left: 55px; }
+.offset-by-one { margin-left: 110px; }
+.offset-by-two { margin-left: 220px; }
+
+/* Clear the columns automagically, thanks @kneath */
+.column-row:after, .row:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .column-row, * html .row, * html .clearfix { height: 1%; }
+.column-row, .row, .clearfix { display: inline-block; }
+.column-row, .row, .clearfix { display: block; }
+
+/*	IE6 Problems ---------- */
+body.ie .column-row { width: 440px; }
+body.ie .two-thirds .column-row { width: 890px; }
