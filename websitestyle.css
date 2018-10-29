@@ -108,8 +108,35 @@ body {
 	border-radius: 3px;
 }
 
-body {
-   display: grid;
-   grid-template-rows: 192px min-content min-content 1fr;
-   grid-template-columns: 1fr 20em;
+.words {
+   margin: 0 -15px;
+	 padding:0;
+	 list-style: none;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 grid-gap: 7px;
 }
+
+.words li {
+	background-color: #DECEEC;
+	border: 1px solid #ECCEDC;
+	padding: 15px;
+	border-radius: 5px;
+	grid-auto-rows: minmax(150px, auto);
+}
+
+@media screen and (min-width: 600px) {
+    #container1 {
+        width: 80%;
+    }
+
+		@media screen and (min-width:1000px) {
+		 section {
+		    display: grid;
+		    grid-template-columns: 200px 1fr 1fr;
+		    grid-gap: 20px;
+		    grid-template-areas:
+		        "a b b"
+		        "c c e"
+		        ". d d";
+		  }
