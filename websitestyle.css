@@ -107,3 +107,9 @@ body {
 	background: #DECEEC;
 	border-radius: 3px;
 }
+
+body {
+   display: grid;
+   grid-template-rows: 192px min-content min-content 1fr;
+   grid-template-columns: 1fr 20em;
+}
